@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | News homepage</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+      .header{
+          display: flex;    
+      }
+      .hero-right{
+        display: flex;
+        gap: 35px;
+      }
+      body{
+        font-family: 'Inter', sans-serif;
+        margin-left: 150px;
+        margin-right: 150px;
+      }
+      .hero{
+        margin-top: 50px;
+      }
+      .news-item{
+        border: 1px solid ;
+        background-color: rgb(3, 3, 38);
+        color: white;
+        height: 460px;
+        width: 370px;
+        padding: 15px;
+        p{
+          text-decoration: underline;
+          text-underline-offset: 20px; 
+          
+        }
+        h2{
+          color: rgb(255, 162, 0);
+          font-size: 30px;  
+        }
+         h3{
+          margin-top: 25px;
+         }
+      }
+      .nav{
+        margin-left: 600px;
+      }
+      .hero-left{
+      img{
+        height: 300px;
+      }
+      }
+      ul{
+          list-style: none;      
+          display: flex; 
+      }
+      li{
+        margin: 20px; 
+      }
+    .articles{
+      display: flex;
+      img{
+        height: 130px;
+      }
+      article{
+        display: flex; 
+      }
+      h2::first-line{
+        color: red;
+      }
+      h2,h4,p{
+        margin-left: 20px;
+      }
+      h4{
+        font-style: bold;
+      }
+    }
+    .heading-para{
+      display: flex;
+      margin-top: -180px;
+    }
+    button{
+      background-color: rgb(185, 22, 22);
+      width: 150px;
+      height: 40px;
+    }
+    .hero-text{
+      font-size: 25px;
+      width: 350px;
+      height: 220px;
+    }
+    .hero-para{
+      margin-top: 15px;
+      margin-left: 60px;
+      font-size: 20px;
+      width: 300px;
+      height: 140px;
+    }
+    .article{
+      h2{
+        margin-top: -3px;
+      }
+    }
+    hr {
+      margin-bottom: 30px; 
+    }
+    .menu-icon{
+      display: none;
+    }
+@media (max-width: 600px) {
+  body {
+    margin: 0 20px;
+    font-size: 16px;
+  }
+
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav {
+    display: none; 
+  }
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-right {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero-right img {
+    width: 100%;
+    height: auto;
+  }
+  .heading-para {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .hero-text,
+  .hero-para {
+    width: 100%;
+    margin-left: 0;
+    text-align: left;
+    height: auto;
+  }
+  .hero-para p {
+    font-size: 10px;
+  }
+  .news-item {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .articles {
+    flex-direction: column;
+    margin-top: 30px; 
+  }
+  .article-card {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+  .article img {
+    width: 100px;
+    height: auto;
+  }
+  .article h2 {
+    font-size: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .article h4 {
+    font-size: 13px;
+    margin-left: 20px;
+  }
+  .article p {
+    font-size: 10px;
+     margin-left: 20px;
+  }
+  hr.spacer {
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+  .menu-icon{
+  display: block;
+  width: 30px;
+  cursor: pointer;
+  }
+}
+</style>
+</head>
+<body>
+  <header class="header">
+  <img src="assets/images/logo.svg" alt="logo">
+    <label for="menu-toggle" class="menu-icon">
+    <img src="assets/images/icon-menu.svg" alt="menu icon">
+  </label>
+  <nav class="nav">
+    <ul>
+      <li>Home</li>
+      <li>New</li>
+      <li>Popular</li>
+      <li>Trending</li>
+      <li>Categories</li>
+    </ul>
+    </div>
+  </nav>
+</header>
+<main class="hero">
+  <div class="hero-left">
+    <aside class="hero-right">
+    <div >
+    <img src="assets/images/image-web-3-desktop.jpg" alt="Web 3.0">
+    </div>
+    <div class="news-item">
+      <h2>New</h2>
+      <h3>Hydrogen VS Electric Cars</h3>
+      <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+      <hr>
+      <h3>The down side of AI srtist</h3>
+      <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+      <hr>
+      <h3>Is VC funding drying up?</h3>
+      <p>what are the possible advice effect on demand AI </p>
+    </div>
+  </aside>
+    <div class="heading-para">
+    <div class="hero-text">
+      <h1>The Bright Future of Web 3.0?</h1>
+    </div>
+    <div class="hero-para">
+      <p>we drive in to the next evaluation of the web that claim to put the power of the plateform back in to the hand of people.</p>
+      <button><strong>Read More</strong></button>
+    </div>
+    </div>
+  </div>
+</main>
+<section class="articles">
+  <article class="article-card">
+    <div class="article">
+    <img src="assets/images/image-retro-pcs.jpg" alt="">
+    </div>
+    <div class="article">
+      <h2>01</h2>
+      <h4>Reviving Retro PCs</h4>
+      <p>What happens when old PCs are given modern upgrades?</p>
+    </div>
+  </article>
+  <article class="article-card">
+    <div>
+    <img src="assets/images/image-top-laptops.jpg" alt="">
+    </div>
+    <div class="article">
+      <h2>02</h2>
+      <h4><strong> 10 Laptops of 2022</strong></h4>
+      <p> Our best picks for various needs and budgets.</p>
+    </div>
+  </article>
+  <article class="article-card">
+    <img src="assets/images/image-gaming-growth.jpg" alt="">
+    <div class="article">
+      <h2>03</h2>
+      <h4>The Growth of Gaming</h4>
+      <p> How the pandemic has sparked fresh opportunities.</p>
+    </div>
+  </article>
+</section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
